@@ -9,8 +9,8 @@ env:
   ###############################################
   ### Replace <username> with GitHub username ###
   ###############################################
-  DOCKER_IMAGE_NAME: <username>-azure-ttt
-  AZURE_WEBAPP_NAME: <username>-ttt-app
+  DOCKER_IMAGE_NAME: NureKalenykVira-azure-ttt
+  AZURE_WEBAPP_NAME: NureKalenykVira-ttt-app
   ###############################################
 
 jobs:
@@ -98,3 +98,4 @@ jobs:
           inlineScript: |
             az logout
             az cache purge
+            az account clear
